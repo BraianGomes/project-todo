@@ -72,6 +72,7 @@ main{
     width: 100%;
     height: 80px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.503);
+    cursor: pointer;
 }
 
 .item-icon{
@@ -91,7 +92,7 @@ main{
     text-align: center;
 }
 
-#delete{
+.delete{
     background-color: red;
     color: white;
     padding: 10px;
@@ -99,7 +100,7 @@ main{
     width: 100%;
 }
 
-#delete > span{
+.delete > span{
     text-align: center;
 }
 
