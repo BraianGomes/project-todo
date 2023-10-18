@@ -3,7 +3,7 @@ let btnAdd = document.getElementById('btn-add');
 let main = document.getElementById('list');
 
 function addTask(){
-    let valorInput = input.value;
+    let valorInput = inputTask.value;
 
     if((valorInput !== "") && (valorInput !== null) && (valorInput !== undefined)){
      
