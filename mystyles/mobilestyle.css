@@ -104,15 +104,21 @@ main{
     text-align: center;
 }
 
-#check{
-    color: green;
+.checked{
+    color: purple;
+    background-color: pink;
 }
 
-.item.check{
+.item.checked{
     background-color: lightgreen;
 }
 
-.item.check .item-name{
+.item.checked .item-name{
     text-decoration: line-through;
     opacity: .2;
+}
+
+.personalizacao{
+    width: 150px;
+    background-color: red;
 }
