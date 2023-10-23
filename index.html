@@ -20,14 +20,26 @@
     <h1>Lista de Tarefas</h1>
 
     <header>
-        <input type="text" placeholder="Digite sua Tarefa" id="input-task">
+        <input type="text" placeholder="Digite sua Tarefa" id="input-task" maxlength="15">
         <button onclick="addTask()" class="add" id="btn-add">Adicionar</button>
     </header>
-    
+
     <main id="list">
 
 
-<div id="adicionar-perso" class="adicionar-perso">dededededed</div>
+        <div id="${contador}" class="item checked">
+            <div onclick="markTask(${contador})" class="item-icon">
+                <input type="checkbox" name="checked" onclick="adicionarSeletor()" id="checked">
+            </div>
+
+            <div onclick="markTask(${contador})" class="item-add">
+                ${valorInput}
+            </div>
+
+            <div class="item-btn">
+<button onclick="del(${contador})" class="delete"><i class='bx bx-trash'></i>Deletar</button>
+            </div>
+        </div>
 
     </main>
 

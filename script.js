@@ -9,24 +9,21 @@ function addTask() {
   if (valorInput !== "" && valorInput !== null && valorInput !== undefined) {
     ++contador;
 
-    let = novoItem =
-  `<div id="${contador}" class="item checked">
-        <div onclick="markTask(${contador})" class="item-icon">
+    let = novoItem = `
+    <div id="${contador}" class="item checked">
+            <div onclick="markTask(${contador})" class="item-icon">
+                <input type="checkbox" name="checked" onclick="adicionarSeletor()">
+            </div>
 
-        <input type="checkbox" name="checked" onclick = "adicionarSeletor()">
+            <div onclick="markTask(${contador})" class="item-add">
+                ${valorInput}
+            </div>
 
+            <div class="item-btn">
+<button onclick="del(${contador})" class="delete"><i class='bx bx-trash'></i>Deletar</button>
+            </div>
         </div>
-
-        <div onclick="markTask(${contador})" class="item-name">
-            ${valorInput}
-        </div>
-
-        <div class="item-btn" id="itemAdd">
-            <button onclick = "del(${contador})"  class="delete">
-<span class="material-symbols-outlined">delete<span> Deletar</button>
-
-        </div>
-  </div>`;
+        `;
 
     main.innerHTML += novoItem;
 
@@ -48,12 +45,10 @@ inputTask.addEventListener("keyup", function (event) {
 });
 
 ////////////////////Checked itens//////////////////////////
-function adicionarSeletor(){
-  var adicionar = document.getElementById("adicionar-perso");
+function adicionarSeletor() {
+  var adicionar = document.getElementById("item-add");
   adicionar.classList.add("personalizacao");
-}
-
-
+};
 
 
 
